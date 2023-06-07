@@ -8,11 +8,12 @@
 		"makeMigration": "./node_modules/knex/bin/cli.js migrate:make",
 		"migrate": "knex migrate:latest",
 		"rollback": "knex migrate:down",
-		"seed": "knex seed:run --knexfile data/index.js"
+		"seed": "knex seed:run"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",
+		"dotenv": "^16.1.4",
 		"express": "~4.16.1",
 		"http-errors": "~1.6.3",
 		"jade": "~1.11.0",

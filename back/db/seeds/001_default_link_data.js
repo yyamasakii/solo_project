@@ -8,14 +8,14 @@ exports.seed = async function (knex) {
 	await knex("link").insert([
 		{
 			id: 1,
-			category: "git",
+			category: "Git",
 			title: "git レクチャー(git hub)",
 			description: "gitのスプリント名：dig-imr-4-precourse.hatch-dig",
 			link: "https://github.com/codechrysalis/dig-imr-4-precourse.hatch-dig",
 		},
 		{
 			id: 2,
-			category: "git",
+			category: "Git",
 			title: "git レクチャー",
 			description: "BTC 2023_4_10",
 			link: "https://dig.codechrysalis.io/dayview/dig-btc-4/20230410",

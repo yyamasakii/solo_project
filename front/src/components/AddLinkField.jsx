@@ -49,9 +49,15 @@ export const AddLinkField = (props) => {
 				<option value="Express">Express</option>
 				<option value="Git">Git</option>
 				<option value="JavaScript">JavaScript</option>
-				<option value="Knex">Knex</option>
+				<option value="Knex/postgerSQL">Knex</option>
 				<option value="Node">Node</option>
+				<option value="TypeScript">TypeScript</option>
 				<option value="React">React</option>
+				<option value="テスト">テスト</option>
+				<option value="エラー対処">エラー対処</option>
+				<option value="便利ツール">便利ツール</option>
+				<option value="気になる">気になる</option>
+				<option value="その他">その他</option>
 			</select>
 			<input
 				type="text"

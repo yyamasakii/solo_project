@@ -54,14 +54,22 @@ This is Confidential.
 
 # category 一覧
 
-Express
-
-Git
-
 JavaScript
 
-Knex
+Express
 
-Node
+Knex/postgerSQL
 
 React
+
+TypeScript
+
+テスト
+
+エラー対処
+
+便利ツール
+
+気になる
+
+その他

@@ -8,7 +8,8 @@
 		"makeMigration": "./node_modules/knex/bin/cli.js migrate:make",
 		"migrate": "knex migrate:latest",
 		"rollback": "knex migrate:down",
-		"seed": "knex seed:run"
+		"seed": "knex seed:run",
+		"test": "mocha test --timeout 5000"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
@@ -20,5 +21,11 @@
 		"knex": "^2.4.2",
 		"morgan": "~1.9.1",
 		"pg": "^8.11.0"
+	},
+	"devDependencies": {
+		"chai": "^4.3.7",
+		"chai-http": "^4.3.0",
+		"mocha": "^10.2.0",
+		"request": "^2.88.2"
 	}
 }

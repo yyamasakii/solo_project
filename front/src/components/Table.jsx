@@ -4,6 +4,7 @@ export const Table = (props) => {
 	const { allList } = props;
 	// console.log("allList :", allList); // 取得OK
 	const linkArr = [];
+
 	allList.forEach((item) => {
 		linkArr.push(
 			<tr>

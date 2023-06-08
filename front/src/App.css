@@ -2,16 +2,16 @@
 	text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
 	height: 40vmin;
 	pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;
 	}
-}
+} */
 
 .App-header {
 	background-color: #282c34;
@@ -24,27 +24,63 @@
 	color: white;
 }
 
-.App-link {
+/* .App-link {
 	color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg);
 	}
-}
+} */
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap");
 h1 {
 	font-family: "Alkatra", cursive;
 	font-weight: bold;
 }
+.newLink {
+	width: 96%;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+select {
+	justify-content: center;
+	width: 15%;
+}
+input {
+	width: 25%;
+	/* height: 100%; */
+}
 
+button {
+	display: block;
+	/* text-align: center; */
+	/* vertical-align: middle; */
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 3rem;
+	font-weight: bold;
+	background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+	border-radius: 100vh;
+	color: #333;
+	border: 1px solid #999;
+	text-shadow: 0 1px #fff;
+	box-shadow: 0 3px 2px 1px #fcfcfc, 0 4px 6px #cecfd1, 0 -2px 2px #cecfd1,
+		0 -4px 2px #eee, inset 0 0 2px 2px #cecfd1;
+	transition: 0.5s;
+}
+
+button:hover {
+	opacity: 0.5;
+}
 th {
 	width: 50px;
-	border: 1px #333 solid; /* 枠線をつける */
+	border: 5px #333 solid; /* 枠線をつける */
 	background-color: #727272;
 	padding: 5px;
 	position: sticky;
@@ -53,7 +89,7 @@ th {
 }
 td {
 	width: 50px;
-	border: 1px #333 solid; /* 枠線をつける */
+	border: 3px #333 solid; /* 枠線をつける */
 	text-align: left;
 	padding: 5px;
 }
@@ -77,6 +113,7 @@ table {
 .description {
 	width: 30%;
 }
+
 .link {
 	width: 30%;
 }

@@ -9,7 +9,7 @@ export const AddLinkField = (props) => {
 	// console.log(getCategory());
 
 	const onClick = () => {
-		console.log("before : ", flag);
+		// console.log("before : ", flag);
 		const newCategory = document.getElementById("category_list");
 		const newTitle = document.getElementById("titleField");
 		const newDescription = document.getElementById("descriptionField");
@@ -35,7 +35,7 @@ export const AddLinkField = (props) => {
 		// .then(window.location.reload());
 		// 一覧をリロードさせるためにuseStateのflagを変更
 		setFlag(!flag);
-		console.log("after : ", flag);
+		// console.log("after : ", flag);
 		// inputタグの中身をクリアする
 		// newCategory.value = "";
 		newTitle.value = "";
@@ -64,7 +64,7 @@ export const AddLinkField = (props) => {
 				placeholder="説明"
 				required></input>
 			<input type="text" id="linkField" placeholder="URL" required></input>
-			<button onClick={onClick}>add link</button>
+			<button onClick={onClick}>Add Link</button>
 		</div>
 	);
 };

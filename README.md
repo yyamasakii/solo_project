@@ -23,12 +23,25 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 ### セットアップと実行方法
 
 1. このレポジトリを clone
+
+1. `psql`で PostgreSQL を起動し、`CREATE DATABASE links;`で links テーブルを作成
+
+1. `\c links`で links テーブルに移動し links テーブルができていることを確認
+
 1. clone したローカルのフォルダを開き、ターミナルで
+
    front ディレクトリ・back ディレクトリに遷移しそれぞれ npm install を実行
    `cd front`
    `npm install`
    `cd ../back`
    `npm install`
+
+1. back ディレクトリで
+
+   `npm run migrate`を実行しテーブルを作成したら次に
+
+   `npm run seed`を実行しデフォルトデータを登録
+
 1. back ディレクトリで`npm start` を実行し、localhost:3000 にアクセス
 
 # Author
@@ -39,7 +52,7 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 
 This is Confidential.
 
-# category
+# category 一覧
 
 Express
 

@@ -18,6 +18,10 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 
 ### アプリのプレビュー
 
+リンクがカテゴリ順（カテゴリの中でさらに古い順）に並んでいます。
+
+一番上のフォーム部分から追加することもできます。
+
 ![スクリーンショット 1](front/screenshot/screenshot1.png)
 
 ### セットアップと実行方法
@@ -44,6 +48,16 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 
 1. back ディレクトリで`npm start` を実行し、localhost:3000 にアクセス
 
+🌈front の編集をしたとき
+
+front フォルダに編集を加えたときは、
+
+ターミナルで front ディレクトリに入り`npm run build`を実行し
+
+次に back ディレクトリに移動して`npm run start`を実行して
+
+ブラウザで開いている localhost:3000 のページを更新することで内容を確認できます。
+
 # Author
 
 - saki
@@ -52,9 +66,13 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 
 This is Confidential.
 
-# category 一覧
+# category 一覧　　（2023/6/9 現在）
 
-JavaScript
+Deploy
+
+Git
+
+JavaScript/CSS/HTML
 
 Express
 

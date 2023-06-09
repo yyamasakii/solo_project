@@ -55,6 +55,11 @@ input {
 	width: 25%;
 	/* height: 100%; */
 }
+input:focus {
+	border: 1px solid #43b7ff;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(73, 209, 255, 0.5);
+}
 
 button {
 	display: block;
@@ -86,6 +91,7 @@ th {
 	position: sticky;
 	top: 0;
 	height: 50px;
+	font-family: "M PLUS Rounded 1c", sans-serif;
 }
 td {
 	width: 50px;

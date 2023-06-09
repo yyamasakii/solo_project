@@ -6,8 +6,8 @@ const knex = require("./knex");
 const server = () => {
 	/* GET home page. */
 	router.get("/", function (req, res, next) {
-		// res.render('index', { title: 'Express' }); //renderによる描画は不要
-		res.sendFile("./public/build/index.html"); //クライアントにindex.htmlを返す
+		//クライアントにindex.htmlを返す
+		res.sendFile("./public/build/index.html");
 	});
 
 	/* GET ALL Link Table Data */
@@ -23,18 +23,25 @@ const server = () => {
 		res.status(200).json(allData);
 	});
 
+	// POST NEW Data
 	router.post("/new", async (req, res) => {
 		// https://zenn.dev/wkb/books/node-tutorial/viewer/todo_06
 		const newLink = req.body;
 		console.log("newLink : ", newLink); // newLink :  { category: 'Express', title: 'aaa', description: 'sss', link: 'ddd' }
+
+		const maxIdResult = await knex("link").max("id as max_id");
+		const maxId = maxIdResult[0].max_id || 0; // 最大IDを取得し、存在しない場合は0として扱う
+		const nextId = maxId + 1;
 		const post = async () => {
-			await knex("link")
+			await knex
 				.insert({
+					id: nextId,
 					category: newLink.category,
 					title: newLink.title,
 					description: newLink.description,
 					link: newLink.link,
 				})
+				.into("link")
 				.catch(function (err) {
 					console.error(err);
 				});
@@ -42,16 +49,6 @@ const server = () => {
 		await post();
 		res.status(200);
 		// error: insert into "link" ("category", "description", "link", "title") values ($1, $2, $3, $4) returning "id" - duplicate key value violates unique constraint "link_pkey"
-
-		// .then(function () {
-		// 	res.redirect("/");
-		// })
-		// .catch(function (err) {
-		// 	console.error(err);
-		// 	// res.render("index", {
-		// 	// 	title: "ToDo App",
-		// 	// });
-		// });
 	});
 	return router;
 };

@@ -32,12 +32,11 @@ export const AddLinkField = (props) => {
 				link: newLink.value,
 			}),
 		}).then((response) => console.log(response));
-		// .then(window.location.reload());
+
 		// 一覧をリロードさせるためにuseStateのflagを変更
 		setFlag(!flag);
-		// console.log("after : ", flag);
+
 		// inputタグの中身をクリアする
-		// newCategory.value = "";
 		newTitle.value = "";
 		newDescription.value = "";
 		newLink.value = "";
@@ -46,9 +45,10 @@ export const AddLinkField = (props) => {
 	return (
 		<div className="newLink">
 			<select name="category_selector" id="category_list" size="3" required>
+				<option value="Deploy">Deploy</option>
 				<option value="Express">Express</option>
 				<option value="Git">Git</option>
-				<option value="JavaScript">JavaScript</option>
+				<option value="JavaScript/CSS/HTML">JavaScript/CSS/HTML</option>
 				<option value="Knex/postgerSQL">Knex</option>
 				<option value="Node">Node</option>
 				<option value="TypeScript">TypeScript</option>

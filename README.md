@@ -28,9 +28,9 @@ Viceroy へのリンクと Github のレポジトリは BTC4 期生向けのた�
 
 1. このレポジトリを clone
 
-1. `psql`で PostgreSQL を起動し、`CREATE DATABASE links;`で links テーブルを作成
+1. `psql`で PostgreSQL を起動し、`CREATE DATABASE links;`で links データベースを作成
 
-1. `\c links`で links テーブルに移動し links テーブルができていることを確認
+1. `\c links`で links データベースに移動し links データベースができていることを確認
 
 1. clone したローカルのフォルダを開き、ターミナルで
 
